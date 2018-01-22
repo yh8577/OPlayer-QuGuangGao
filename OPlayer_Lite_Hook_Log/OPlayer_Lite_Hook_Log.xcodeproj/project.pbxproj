@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A62DC7BA2006B3370051FD6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62DC7B92006B3370051FD6A /* UIKit.framework */; };
+		A62DC7BC2006B3E70051FD6A /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A62DC7BB2006B3E70051FD6A /* libsubstrate.dylib */; };
+		A62DC7BE2006C24D0051FD6A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62DC7BD2006C24D0051FD6A /* CoreGraphics.framework */; };
+		A6FBF2AD2006B29C00BD41AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FBF2AC2006B29C00BD41AC /* Foundation.framework */; };
+		A6FBF2B82006B29C00BD41AC /* OPlayer_Lite_Hook_Log.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6FBF2B72006B29C00BD41AC /* OPlayer_Lite_Hook_Log.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A62DC7B92006B3370051FD6A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A62DC7BB2006B3E70051FD6A /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../cs/libsubstrate.dylib; sourceTree = "<group>"; };
+		A62DC7BD2006C24D0051FD6A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A6FBF2A92006B29C00BD41AC /* OPlayer_Lite_Hook_Log.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = OPlayer_Lite_Hook_Log.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FBF2AC2006B29C00BD41AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A6FBF2B12006B29C00BD41AC /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		A6FBF2B22006B29C00BD41AC /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		A6FBF2B42006B29C00BD41AC /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		A6FBF2B52006B29C00BD41AC /* OPlayer_Lite_Hook_Log-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OPlayer_Lite_Hook_Log-Prefix.pch"; sourceTree = "<group>"; };
+		A6FBF2B62006B29C00BD41AC /* OPlayer_Lite_Hook_Log.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OPlayer_Lite_Hook_Log.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A6FBF2B72006B29C00BD41AC /* OPlayer_Lite_Hook_Log.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OPlayer_Lite_Hook_Log.mm; sourceTree = "<group>"; };
+		A6FBF2BC2006B29C00BD41AC /* OPlayer_Lite_Hook_Log.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = OPlayer_Lite_Hook_Log.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/OPlayer_Lite_Hook_Log.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6FBF2A52006B29C00BD41AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62DC7BE2006C24D0051FD6A /* CoreGraphics.framework in Frameworks */,
+				A62DC7BC2006B3E70051FD6A /* libsubstrate.dylib in Frameworks */,
+				A62DC7BA2006B3370051FD6A /* UIKit.framework in Frameworks */,
+				A6FBF2AD2006B29C00BD41AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6FBF29E2006B29C00BD41AC = {
+			isa = PBXGroup;
+			children = (
+				A6FBF2AE2006B29C00BD41AC /* OPlayer_Lite_Hook_Log */,
+				A6FBF2AB2006B29C00BD41AC /* Frameworks */,
+				A6FBF2AA2006B29C00BD41AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6FBF2AA2006B29C00BD41AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6FBF2A92006B29C00BD41AC /* OPlayer_Lite_Hook_Log.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6FBF2AB2006B29C00BD41AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A62DC7BD2006C24D0051FD6A /* CoreGraphics.framework */,
+				A62DC7BB2006B3E70051FD6A /* libsubstrate.dylib */,
+				A62DC7B92006B3370051FD6A /* UIKit.framework */,
+				A6FBF2AC2006B29C00BD41AC /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6FBF2AE2006B29C00BD41AC /* OPlayer_Lite_Hook_Log */ = {
+			isa = PBXGroup;
+			children = (
+				A6FBF2B62006B29C00BD41AC /* OPlayer_Lite_Hook_Log.xm */,
+				A6FBF2B72006B29C00BD41AC /* OPlayer_Lite_Hook_Log.mm */,
+				A6FBF2AF2006B29C00BD41AC /* Package */,
+				A6FBF2B32006B29C00BD41AC /* Supporting Files */,
+			);
+			path = OPlayer_Lite_Hook_Log;
+			sourceTree = "<group>";
+		};
+		A6FBF2AF2006B29C00BD41AC /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				A6FBF2B02006B29C00BD41AC /* DEBIAN */,
+				A6FBF2B92006B29C00BD41AC /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		A6FBF2B02006B29C00BD41AC /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				A6FBF2B12006B29C00BD41AC /* control.txt */,
+				A6FBF2B22006B29C00BD41AC /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		A6FBF2B32006B29C00BD41AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6FBF2B42006B29C00BD41AC /* PackageVersion.plist */,
+				A6FBF2B52006B29C00BD41AC /* OPlayer_Lite_Hook_Log-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6FBF2B92006B29C00BD41AC /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A6FBF2BA2006B29C00BD41AC /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		A6FBF2BA2006B29C00BD41AC /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				A6FBF2BB2006B29C00BD41AC /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		A6FBF2BB2006B29C00BD41AC /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				A6FBF2BC2006B29C00BD41AC /* OPlayer_Lite_Hook_Log.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A6FBF2A62006B29C00BD41AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A6FBF2A82006B29C00BD41AC /* OPlayer_Lite_Hook_Log */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FBF2BF2006B29C00BD41AC /* Build configuration list for PBXNativeTarget "OPlayer_Lite_Hook_Log" */;
+			buildPhases = (
+				A6FBF2A32006B29C00BD41AC /* ShellScript */,
+				A6FBF2A42006B29C00BD41AC /* Sources */,
+				A6FBF2A52006B29C00BD41AC /* Frameworks */,
+				A6FBF2A62006B29C00BD41AC /* Headers */,
+				A6FBF2A72006B29C00BD41AC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OPlayer_Lite_Hook_Log;
+			productName = OPlayer_Lite_Hook_Log;
+			productReference = A6FBF2A92006B29C00BD41AC /* OPlayer_Lite_Hook_Log.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6FBF29F2006B29C00BD41AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					A6FBF2A82006B29C00BD41AC = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ZEGP83LMQ7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A6FBF2A22006B29C00BD41AC /* Build configuration list for PBXProject "OPlayer_Lite_Hook_Log" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A6FBF29E2006B29C00BD41AC;
+			productRefGroup = A6FBF2AA2006B29C00BD41AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6FBF2A82006B29C00BD41AC /* OPlayer_Lite_Hook_Log */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6FBF2A32006B29C00BD41AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		A6FBF2A72006B29C00BD41AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6FBF2A42006B29C00BD41AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FBF2B82006B29C00BD41AC /* OPlayer_Lite_Hook_Log.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A6FBF2BD2006B29C00BD41AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		A6FBF2BE2006B29C00BD41AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		A6FBF2C02006B29C00BD41AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZEGP83LMQ7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OPlayer_Lite_Hook_Log/OPlayer_Lite_Hook_Log-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.31.230;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		A6FBF2C12006B29C00BD41AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZEGP83LMQ7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OPlayer_Lite_Hook_Log/OPlayer_Lite_Hook_Log-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.31.230;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6FBF2A22006B29C00BD41AC /* Build configuration list for PBXProject "OPlayer_Lite_Hook_Log" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FBF2BD2006B29C00BD41AC /* Debug */,
+				A6FBF2BE2006B29C00BD41AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FBF2BF2006B29C00BD41AC /* Build configuration list for PBXNativeTarget "OPlayer_Lite_Hook_Log" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FBF2C02006B29C00BD41AC /* Debug */,
+				A6FBF2C12006B29C00BD41AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6FBF29F2006B29C00BD41AC /* Project object */;
+}
